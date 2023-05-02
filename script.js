@@ -1,14 +1,14 @@
 //your JS code here. If required.
 
-function playSound(filename) {
-	var audio = new Audio('sounds/' + filename);
-	audio.play();
+function playSong(file) {
+	var audio = new Audio('sounds/' + file)
+	audio.play()
 }
 
-function stopAllSounds() {
-	var sounds = document.getElementsByTagName('audio');
-	for (var i = 0; i < sounds.length; i++) {
-		sounds[i].pause();
-		sounds[i].currentTime = 0;
+function stopAllSong() {
+	var songs = document.getElementsByTagName('audio')
+	for (let i = 0; i < songs.length; i++) {
+		songs[i].pause()
+		songs[i].currentTime = 0
 	}
 }
